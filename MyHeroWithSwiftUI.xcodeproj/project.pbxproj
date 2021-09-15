@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B07463D26EB448600C5DD52 /* HeroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B16D17826E9C35000E342BC /* HeroDetail.swift */; };
 		2B16D15B26E9BF0F00E342BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B16D15A26E9BF0F00E342BC /* AppDelegate.swift */; };
 		2B16D15D26E9BF0F00E342BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B16D15C26E9BF0F00E342BC /* SceneDelegate.swift */; };
 		2B16D15F26E9BF0F00E342BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B16D15E26E9BF0F00E342BC /* ContentView.swift */; };
 		2B16D16126E9BF1200E342BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B16D16026E9BF1200E342BC /* Assets.xcassets */; };
 		2B16D16426E9BF1200E342BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B16D16326E9BF1200E342BC /* Preview Assets.xcassets */; };
 		2B16D16726E9BF1200E342BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B16D16526E9BF1200E342BC /* LaunchScreen.storyboard */; };
+		2B16D17526E9C27A00E342BC /* DummyHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B16D17426E9C27A00E342BC /* DummyHeroes.swift */; };
+		2B16D17726E9C2A600E342BC /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B16D17626E9C2A600E342BC /* Hero.swift */; };
+		2B16D17B26E9C36A00E342BC /* HeroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B16D17A26E9C36A00E342BC /* HeroList.swift */; };
+		2B16D17D26E9C38200E342BC /* HeroRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B16D17C26E9C38200E342BC /* HeroRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		2B16D16326E9BF1200E342BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B16D16626E9BF1200E342BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B16D16826E9BF1200E342BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B16D17426E9C27A00E342BC /* DummyHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyHeroes.swift; sourceTree = "<group>"; };
+		2B16D17626E9C2A600E342BC /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		2B16D17826E9C35000E342BC /* HeroDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetail.swift; sourceTree = "<group>"; };
+		2B16D17A26E9C36A00E342BC /* HeroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroList.swift; sourceTree = "<group>"; };
+		2B16D17C26E9C38200E342BC /* HeroRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +66,9 @@
 		2B16D15926E9BF0F00E342BC /* MyHeroWithSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				2B16D15A26E9BF0F00E342BC /* AppDelegate.swift */,
-				2B16D15C26E9BF0F00E342BC /* SceneDelegate.swift */,
-				2B16D15E26E9BF0F00E342BC /* ContentView.swift */,
+				2B16D17026E9C15E00E342BC /* View */,
+				2B16D16F26E9C15200E342BC /* Model */,
+				2B16D16E26E9C12A00E342BC /* Base */,
 				2B16D16026E9BF1200E342BC /* Assets.xcassets */,
 				2B16D16526E9BF1200E342BC /* LaunchScreen.storyboard */,
 				2B16D16826E9BF1200E342BC /* Info.plist */,
@@ -73,6 +83,35 @@
 				2B16D16326E9BF1200E342BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B16D16E26E9C12A00E342BC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2B16D15A26E9BF0F00E342BC /* AppDelegate.swift */,
+				2B16D15C26E9BF0F00E342BC /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2B16D16F26E9C15200E342BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B16D17426E9C27A00E342BC /* DummyHeroes.swift */,
+				2B16D17626E9C2A600E342BC /* Hero.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B16D17026E9C15E00E342BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B16D15E26E9BF0F00E342BC /* ContentView.swift */,
+				2B16D17826E9C35000E342BC /* HeroDetail.swift */,
+				2B16D17A26E9C36A00E342BC /* HeroList.swift */,
+				2B16D17C26E9C38200E342BC /* HeroRow.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +141,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Dicoding Indonesia";
 				TargetAttributes = {
 					2B16D15626E9BF0F00E342BC = {
@@ -146,8 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B16D17726E9C2A600E342BC /* Hero.swift in Sources */,
 				2B16D15B26E9BF0F00E342BC /* AppDelegate.swift in Sources */,
 				2B16D15D26E9BF0F00E342BC /* SceneDelegate.swift in Sources */,
+				2B16D17B26E9C36A00E342BC /* HeroList.swift in Sources */,
+				2B07463D26EB448600C5DD52 /* HeroDetail.swift in Sources */,
+				2B16D17526E9C27A00E342BC /* DummyHeroes.swift in Sources */,
+				2B16D17D26E9C38200E342BC /* HeroRow.swift in Sources */,
 				2B16D15F26E9BF0F00E342BC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +236,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -252,6 +297,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
