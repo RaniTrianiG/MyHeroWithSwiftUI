@@ -1,2 +1,2 @@
 # MyHeroWithSwiftUI
-Secod Project create iOS application with Swift
+Second Project create iOS application with Swift
